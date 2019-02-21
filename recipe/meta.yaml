@@ -9,12 +9,12 @@ source:
   sha256: 0ce542616a089b1069b474e0b6c2f4373b5c104670351d81b1750f85951c7959
 
 build:
-    number: 0
+    number: 1
     noarch: python
-    script: python -m pip install --no-deps --ignore-installed .
+    script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
-  build:
+  host:
     - python {{ python }}
     - setuptools
     - requests
@@ -29,7 +29,11 @@ test:
 
 about:
   home: https://github.com/esgf/output_viewer
-  summary: The Output Viewer is designed to provide a framework for viewing arbitrary output from diagnostics scripts, metrics, or any program that produces a ton of different files that you want to look at it in an easy-to-use fashion.
+  summary: |
+    The Output Viewer is designed to provide a framework for viewing arbitrary
+    output from diagnostics scripts, metrics, or any program that produces a
+    ton of different files that you want to look at it in an easy-to-use
+    fashion.
   license: ESGF
   license_file: LICENSE
 
@@ -37,3 +41,4 @@ extra:
     recipe-maintainers:
         - doutriaux1
         - zshaheen
+        - xylar
