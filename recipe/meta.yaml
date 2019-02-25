@@ -1,12 +1,12 @@
 {% set name = "output_viewer" %}
-{% set version = "1.2.5" %}
+{% set version = "1.2.6" %}
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
   url: https://github.com/esgf/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 0ce542616a089b1069b474e0b6c2f4373b5c104670351d81b1750f85951c7959
+  sha256: 262b83dfd6fae91e37c0f29054c4a2d3c3dcacda0584b6db54035f402112ade3
 
 build:
     number: 0
