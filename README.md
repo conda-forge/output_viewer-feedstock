@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About output_viewer
 ===================
 
@@ -11,15 +7,26 @@ Package license: ESGF
 
 Feedstock license: BSD 3-Clause
 
-Summary: The Output Viewer is designed to provide a framework for viewing arbitrary output from diagnostics scripts, metrics, or any program that produces a ton of different files that you want to look at it in an easy-to-use fashion.
+Summary: The Output Viewer is designed to provide a framework for viewing arbitrary
+output from diagnostics scripts, metrics, or any program that produces a
+ton of different files that you want to look at it in an easy-to-use
+fashion.
+
 
 
 
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/output_viewer-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/output_viewer-feedstock)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/rebuild_for_all_python-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
@@ -114,5 +121,6 @@ Feedstock Maintainers
 =====================
 
 * [@doutriaux1](https://github.com/doutriaux1/)
+* [@xylar](https://github.com/xylar/)
 * [@zshaheen](https://github.com/zshaheen/)
 
