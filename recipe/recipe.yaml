@@ -45,7 +45,7 @@ about:
     output from diagnostics scripts, metrics, or any program that produces a
     ton of different files that you want to look at it in an easy-to-use
     fashion.
-  license: BSD-3-Clause
+  license: LicenseRef-BSD-3-Clause-LLNL
   license_file: LICENSE
   homepage: https://github.com/esgf/output_viewer
 
