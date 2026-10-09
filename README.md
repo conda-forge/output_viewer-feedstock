@@ -5,13 +5,12 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/output_viewer-f
 
 Home: https://github.com/esgf/output_viewer
 
-Package license: ESGF
+Package license: LicenseRef-BSD-3-Clause-LLNL
 
 Summary: The Output Viewer is designed to provide a framework for viewing arbitrary
 output from diagnostics scripts, metrics, or any program that produces a
 ton of different files that you want to look at it in an easy-to-use
 fashion.
-
 
 Current build status
 ====================
@@ -20,7 +19,9 @@ Current build status
 <table><tr>
     <td>All platforms:</td>
     <td>
-      <img src="https://img.shields.io/badge/noarch-disabled-lightgrey.svg" alt="noarch disabled">
+      <a href="https://github.com/conda-forge/output_viewer-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/output_viewer-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
+      </a>
     </td>
   </tr>
 </table>
@@ -42,31 +43,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `output_viewer` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install output_viewer
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install output_viewer
 ```
 
-It is possible to list all of the versions of `output_viewer` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add output_viewer
+# for installing globally
+pixi global install output_viewer
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `output_viewer` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search output_viewer --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search output_viewer --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search output_viewer --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -78,6 +121,8 @@ mamba repoquery whoneeds output_viewer --channel conda-forge
 # List dependencies of `output_viewer`:
 mamba repoquery depends output_viewer --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
